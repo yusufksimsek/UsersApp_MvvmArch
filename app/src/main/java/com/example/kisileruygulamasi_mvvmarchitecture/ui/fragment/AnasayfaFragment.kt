@@ -39,17 +39,10 @@ class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
 
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbarAnasayfa)
 
-        val kisilerListesi = ArrayList<Kisiler>()
-        val k1 = Kisiler(1,"Ahmet","1111")
-        val k2 = Kisiler(2,"Zeynep","2222")
-        val k3 = Kisiler(3,"Beyza","3333")
-
-        kisilerListesi.add(k1)
-        kisilerListesi.add(k2)
-        kisilerListesi.add(k3)
-
-        val adapter = KisilerAdapter(requireContext(),kisilerListesi,viewModel)
-        binding.kisilerAdapter= adapter
+        viewModel.kisilerListesi.observe(viewLifecycleOwner){
+            val adapter = KisilerAdapter(requireContext(),it,viewModel)
+            binding.kisilerAdapter= adapter
+        }
 
         requireActivity().addMenuProvider(object : MenuProvider{
 
@@ -92,7 +85,7 @@ class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
 
     override fun onResume() {
         super.onResume()
-        Log.e("Kişi Anasayfa","Dönüldü")
+        viewModel.kisileriYukle()
     }
 
 }
