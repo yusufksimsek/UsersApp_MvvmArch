@@ -27,6 +27,8 @@ import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.KisiKayitView
 
 // change 1
 
+// change 2
+
 class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
     androidx.appcompat.widget.SearchView.OnQueryTextListener {
         private lateinit var binding: FragmentAnasayfaBinding
