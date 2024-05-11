@@ -25,9 +25,6 @@ import com.example.kisileruygulamasi_mvvmarchitecture.ui.adapter.KisilerAdapter
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.AnasayfaViewModel
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.KisiKayitViewModel
 
-// change 1
-
-// change 2 deneme
 
 class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
     androidx.appcompat.widget.SearchView.OnQueryTextListener {
