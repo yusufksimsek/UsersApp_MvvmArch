@@ -24,6 +24,7 @@ import com.example.kisileruygulamasi_mvvmarchitecture.databinding.FragmentAnasay
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.adapter.KisilerAdapter
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.AnasayfaViewModel
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.KisiKayitViewModel
+import com.example.kisileruygulamasi_mvvmarchitecture.util.gecisYap
 
 
 class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
@@ -70,7 +71,7 @@ class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
     }
 
     fun fabTikla(it: View){
-        Navigation.findNavController(it).navigate(R.id.kisiKayitGecis)
+        Navigation.gecisYap(it,R.id.kisiKayitGecis)
     }
 
     override fun onQueryTextSubmit(query: String): Boolean {
