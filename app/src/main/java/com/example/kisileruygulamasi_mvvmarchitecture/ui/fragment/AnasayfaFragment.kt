@@ -86,9 +86,4 @@ class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
         return true
     }
 
-    override fun onResume() {
-        super.onResume()
-        viewModel.kisileriYukle()
-    }
-
 }

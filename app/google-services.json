@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "244391084956",
+    "firebase_url": "https://usersapp-mvvm-arch-default-rtdb.firebaseio.com",
+    "project_id": "usersapp-mvvm-arch",
+    "storage_bucket": "usersapp-mvvm-arch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244391084956:android:60d553f778661a80567e59",
+        "android_client_info": {
+          "package_name": "com.example.kisileruygulamasi_mvvmarchitecture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa_3BeF0QHbKf_MghLt4EbA79sgiKlGt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
