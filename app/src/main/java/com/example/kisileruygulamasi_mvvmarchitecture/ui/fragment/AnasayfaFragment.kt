@@ -25,8 +25,10 @@ import com.example.kisileruygulamasi_mvvmarchitecture.ui.adapter.KisilerAdapter
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.AnasayfaViewModel
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.KisiKayitViewModel
 import com.example.kisileruygulamasi_mvvmarchitecture.util.gecisYap
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class AnasayfaFragment : Fragment(),SearchView.OnQueryTextListener,
     androidx.appcompat.widget.SearchView.OnQueryTextListener {
         private lateinit var binding: FragmentAnasayfaBinding

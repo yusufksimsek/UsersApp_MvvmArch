@@ -11,8 +11,10 @@ import androidx.fragment.app.viewModels
 import com.example.kisileruygulamasi_mvvmarchitecture.R
 import com.example.kisileruygulamasi_mvvmarchitecture.databinding.FragmentKisiKayitBinding
 import com.example.kisileruygulamasi_mvvmarchitecture.ui.viewmodel.KisiKayitViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class KisiKayitFragment : Fragment() {
         private lateinit var binding: FragmentKisiKayitBinding
         private lateinit var viewModel: KisiKayitViewModel
